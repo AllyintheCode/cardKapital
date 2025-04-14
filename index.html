@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Kart Əməliyyat Sistemi</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Kart Əməliyyat Sistemi</h1>
+    <div class="form">
+      <input type="text" id="cardNumber" placeholder="Kart Nömrəsi (16 rəqəm)">
+      <button onclick="checkCard()">Daxil ol</button>
+      <div id="pinsecen" class="hidden">
+        <input type="password" id="pinCode" placeholder="PIN (4 rəqəm)">
+        <button onclick="checkPin()">Təsdiqlə</button>
+      </div>
+      <div id="actionSection" class="hidden">
+        <p id="balanceHaq">Balans: 0 AZN</p>
+        <input type="number" id="amount" placeholder="Məbləğ">
+        <button onclick="addMoney()">Pul Əlavə Et</button>
+        <button onclick="withdrawMoney()">Pul Çıxart</button>
+      </div>
+      <p id="message"></p>
+    </div>
+  </div>
+  <script src="./app.js"></script>
+</body>
+
+</html>
