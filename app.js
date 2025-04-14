@@ -12,7 +12,7 @@ function checkCard() {
   setTimeout(() => {
     if (cards[card]) {
       currentCard = card;
-      document.getElementById("pinSection").style.display = "block";
+      document.getElementById("pinsecen").style.display = "block";
       showMsg("Kart təsdiqləndi.");
     } else {
       showMsg("Kart tapılmadı");
@@ -55,7 +55,7 @@ function withdrawMoney() {
       cards[currentCard].balance -= amount;
       updateBalance();
       showMsg("Buyurun, kartınız. Pul çıxarıldı.");
-    }, 1500); // 1.5 saniyəlik gecikmə
+    }, 1500);
   } else {
     showMsg("Balans kifayət etmir və ya məbləğ yanlışdır");
   }
@@ -67,6 +67,6 @@ function showMsg(text) {
   setTimeout(() => {
     msgBox.innerText = text;
     msgBox.classList.remove("fade");
-  }, 200); // kiçik animasiya gecikməsi
+  }, 200);
 }
 
